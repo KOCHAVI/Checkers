@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                            // Target ES6 or any other version
+    "module": "CommonJS",                       // Use CommonJS for Node.js
+    "outDir": "./dist",                         // Output directory for compiled JS files
+    "rootDir": "../Server",                      // The root directory for TypeScript files
+    "strict": true,                             // Enable strict type checking
+    "esModuleInterop": true,                    // Allows default imports from CommonJS modules
+    "skipLibCheck": true,                       // Skip checking of declaration files
+    "forceConsistentCasingInFileNames": true    // Enforce case-sensitive file names
+  },
+  "include": ["../Server/**/*.ts", "Models/StartBoard.js", "Models/Piece.js", "Utils/GameUtils.js"],                // Include all TypeScript files in the server directory
+  "exclude": ["node_modules"]                   // Exclude node_modules from compilation
+}
